@@ -8,5 +8,5 @@ let KEY = config.MY_KEY;
 ```
 - With:
 ```javascript
-let KEY = //Whatever your key is (in quotation marks)
+let KEY = //Whatever your key is e.g. 0123456789 (in quotation marks)
 ```
