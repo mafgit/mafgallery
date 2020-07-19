@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>mafgallery</title>
+  </head>
+  <body>
+    <header>
+      <div id="bg-wrapper">
+        <div id="heading">
+          <h1>mafgallery</h1>
+        </div>
+        <div id="header-inputs">
+          <div id="inputs">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search"
+              autocomplete="off"
+            />
+            <button id="search-btn"><i class="fa fa-search"></i></button>
+          </div>
+          <div id="filters">
+            <div id="min-div1">
+              <label for="min-width">Min-Width</label>
+              <input type="number" id="min-width" value="0" />
+            </div>
+            <div id="min-div2">
+              <label for="min-height">Min-Height</label>
+              <input type="number" id="min-height" value="0" />
+            </div>
+            <div>
+              <label for="editors-choice">Editors Choice</label>
+              <select id="editors-choice">
+                <option value="false">Off</option>
+                <option value="true">On</option>
+              </select>
+            </div>
+            <div>
+              <label for="order">Order</label>
+              <select id="order">
+                <option value="popular">Popular</option>
+                <option value="latest">Latest</option>
+              </select>
+            </div>
+            <div>
+              <label for="colors">Colors</label>
+              <input
+                type="text"
+                id="colors"
+                value=""
+                placeholder="e.g. red purple"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="result"></div>
+      <div id="opened-img" style="display: none;">
+        <div class="img">
+          <img src="" />
+          <div class="img-detail"></div>
+        </div>
+        <div id="open-img">
+          <button id="back" onclick="toggleHide()">Back</button>
+          <button id="openlink" onclick="openImage()">Open Image</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      The Images have been fetched from
+      <a href="https://pixabay.com/">Pixabay</a>
+    </footer>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

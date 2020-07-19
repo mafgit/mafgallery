@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  background-color: #1c1c1c;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 112, 241),
+    rgb(255, 23, 93)
+  );
+  background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+#filters,
+#heading,
+#inputs {
+  padding: 20px 0;
+}
+#heading {
+  text-align: center;
+}
+
+#bg-wrapper {
+  background-color: rgba(0, 0, 0, 0.267);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button,
+input,
+select {
+  border: none;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+#search {
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+#filters {
+  font-size: 18px;
+  display: flex;
+}
+
+#filters input,
+#filters select {
+  font-size: 16px;
+  width: 150px;
+  margin: 0 5px;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+#filters div,
+#filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-btn {
+  cursor: pointer;
+  width: 40px;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 50px;
+  margin: 0 5px;
+}
+#search-btn:hover,
+#filters input:focus,
+#filters select:focus,
+#search:focus {
+  background-color: #000;
+  transition: 0.3s;
+  color: #fff;
+}
+
+#search-btn,
+#filters input,
+#filters select,
+#search {
+  transition: 0.4s;
+}
+#header-inputs {
+  width: 100%;
+}
+#header-inputs #inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div {
+  margin: 0 20px;
+}
+
+#result {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #1c1c1c;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.img img {
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.img img:hover {
+  transition: 0.4s;
+  filter: brightness(0.5);
+}
+.img-detail {
+  padding-top: 3px;
+  display: flex;
+  color: #fff;
+}
+
+.img-detail p {
+  padding: 10px 0;
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+
+.likes {
+  color: red;
+}
+
+.views {
+  color: rgb(0, 162, 255);
+}
+
+span {
+  margin: 0 5px;
+}
+#opened-img {
+  padding: 20px 0 40px 0;
+}
+#opened-img .img {
+  width: 80%;
+  height: 100%;
+}
+#opened-img button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.4s;
+}
+#open-img {
+  text-align: center;
+}
+#open-img button {
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+}
+footer {
+  text-align: center;
+  background-color: #1c1c1c;
+  padding: 20px;
+  color: #fff;
+}
+a,
+a:visited {
+  color: cyan;
+}
+#opened-img .img-detail {
+  display: none;
+}
+#opened-img img {
+  height: 100%;
+}
+@media (max-width: 1300px) {
+  header {
+    height: 450px;
+  }
+  #filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin: auto;
+  }
+  #filters input,
+  #filters select {
+    width: 200px;
+  }
+  #filters div label {
+    width: 100px;
+  }
+  #filters div {
+    width: 250px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #result {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  #result {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  #filters {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  #result {
+    grid-template-columns: 1fr;
+  }
+  #result .img {
+    width: 90%;
+  }
+}
+@media (max-width: 590px) {
+  #filters {
+    grid-template-columns: 1fr;
+  }
+  #filters div input,
+  #filters div select {
+    margin: 0;
+  }
+  #filters div {
+    width: 100%;
+  }
+}
+@media (max-width: 370px) {
+  #search {
+    width: 85%;
+  }
+}
