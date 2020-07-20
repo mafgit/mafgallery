@@ -7,7 +7,7 @@
 ```
 config.js
 ```
-Copy the following code inside 'config.js' but replace the value of MY_KEY with your Pixabay API key in quotation marks.
+- Copy the following code inside 'config.js' but replace the value of MY_KEY with your Pixabay API key in quotation marks.
 ```javascript
 let config = {
   MY_KEY: '',
