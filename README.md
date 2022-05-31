@@ -1,5 +1,3 @@
-> https://mafgallery.netlify.app
-
 # mafgallery
 - A free stock image website, that fetches data from Pixabay's API.
 - You would need an <b>API Key</b> for this website to work properly, so go to https://pixabay.com/api/docs/ to get an API Key for <b>free</b>.
